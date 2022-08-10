@@ -1,28 +1,22 @@
-# text = 'shirin'
+# text = 'shirin'  # Global var
 #
-# def mevaTami():
-#     return text
-
-
-# text =text 'shirin'  # global var
-
-# def mevaTami():
-#     global text
-#     text = 'achchiq'  # local var
+# def meva():
+#     # return text
+#     txt = 'achchiq'  # local var
 #
+# # print(txt)  # error
 #
-# print('olma', text)
-# mevaTami()
-
-
+# print('Meva tami', meva())
 
 count = 0
 
-def msg():
+def f():
     global count
-    count+=1
+    count += 1
 
-msg()
-msg()
-print(count)  # 2
+f()
+f()
+f()
+print(count)
+
 

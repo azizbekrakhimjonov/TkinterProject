@@ -1,14 +1,25 @@
-# from tkinter import *
+# from tkinter import Button, Tk
 #
 # root = Tk()
-# root.geometry("200x150")
+# def OnPressBtn():
+#     print('On Click button')
 #
-# def onClickButton():
-#     print('OnClick button 1')
-#
-#
-# button1 = Button(root, text='Click 1',
-#                  width=10, height=5, command=onClickButton)
-# button1.pack()
+# button = Button(root, text='Click me', command=OnPressBtn)
+# button.pack()
 #
 # root.mainloop()
+
+
+from tkinter import Tk, Button
+
+root = Tk()
+root.geometry('300x400')
+root.config(bg='green')
+
+def f():
+    root.config(bg='red')
+
+btn = Button(root, text='Next Color', command=f)
+btn.pack()
+
+root.mainloop()

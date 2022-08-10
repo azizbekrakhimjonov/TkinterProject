@@ -1,11 +1,8 @@
-from tkinter import *
-root = Tk()
-root.geometry("200x150")
+from tkinter import Button, Tk
 
-button1 = Button(root, text='Click 1', width=10, height=5)
-button1.pack()
+root = Tk()
+
+button = Button(root, text='Click me', bg='green')
+button.pack()
 
 root.mainloop()
-
-
-
