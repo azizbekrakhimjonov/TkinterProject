@@ -10,7 +10,7 @@
 # root.mainloop()
 
 
-from tkinter import Tk, Button
+from tkinter import Tk, Button, ttk
 
 root = Tk()
 root.geometry('300x400')
@@ -19,7 +19,7 @@ root.config(bg='green')
 def f():
     root.config(bg='red')
 
-btn = Button(root, text='Next Color', command=f)
+btn = ttk.Button(root, text='Next Color', command=f)
 btn.pack()
 
 root.mainloop()
